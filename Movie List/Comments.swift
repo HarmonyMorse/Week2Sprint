@@ -11,7 +11,6 @@ import Foundation
 /*
  TO DO NOW:
 
-
  
  FINISHED:
  A Movie model object that has properties for:
@@ -34,6 +33,13 @@ import Foundation
 /*
  Your finished project must include all of the following requirements:
  Tapping the button toggles whether the user has seen the movie or not. (This should change the Movie's Bool property that represents if it has been seen or not)
+ 
+ 
+ To do:
+ Creat class files for ViewController and DetailViewController
+ Assign each view to the classes created
+ Make segues for buttons/text-fields/labels on each view
+ Make methods for each button/text-field/label that requires and action
  
  
  Stretch Problems:
