@@ -63,11 +63,32 @@
                             <constraint firstItem="rcH-VF-NCV" firstAttribute="leading" secondItem="wkk-ZG-Snw" secondAttribute="leading" id="c0N-RA-XF7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="glh-aS-SP8"/>
+                    <navigationItem key="navigationItem" id="glh-aS-SP8">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Hqz-1X-WLK">
+                            <connections>
+                                <segue destination="lsZ-FY-8a8" kind="presentation" id="YqY-Co-gse"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pom-sq-dYl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="659.4202898550725" y="200.89285714285714"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fpK-OE-Wl3">
+            <objects>
+                <viewController id="lsZ-FY-8a8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DAo-d3-3cR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fV9-nF-TSn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dpV-X7-jxj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1467" y="201"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zNy-Xg-GkL">

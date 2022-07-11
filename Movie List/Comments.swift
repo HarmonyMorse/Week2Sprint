@@ -10,7 +10,7 @@ import Foundation
 
 /*
  TO DO NOW:
- 
+
  
  FINISHED:
  A Movie model object that has properties for:
@@ -22,6 +22,8 @@ import Foundation
  The table view should use a custom UITableViewCell subclass with a "Seen"/"Not Seen" button.
  + Added label for movie name
  
+ A bar button item that segues to a new view controller. This new view controller allows the user to add new movies. 
+ 
  */
 
 
@@ -29,7 +31,7 @@ import Foundation
  Your finished project must include all of the following requirements:
  Tapping the button toggles whether the user has seen the movie or not. (This should change the Movie's Bool property that represents if it has been seen or not)
 
- A bar button item that segues to a new view controller. This new view controller allows the user to add new movies. The view controller should have a text field to put in the movie's name, and a button to save the movie.
+ The view controller should have a text field to put in the movie's name, and a button to save the movie.
  
  
  Stretch Problems:
