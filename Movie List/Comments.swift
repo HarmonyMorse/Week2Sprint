@@ -17,6 +17,7 @@ import Foundation
  The movie's name as a String
  Whether it has been seen or not as a Bool. You can set a default value for this property to false if you want.
  
+ A view controller that shows a list of movies that the user has created. This should be a subclass of UIViewController that has a UITableView in it.
  
  */
 
@@ -29,7 +30,6 @@ import Foundation
 /*
  Your finished project must include all of the following requirements:
  
- A view controller that shows a list of movies that the user has created. This should be a subclass of UIViewController that has a UITableView in it.
  The table view should use a custom UITableViewCell subclass with a "Seen"/"Not Seen" button. Tapping the button toggles whether the user has seen the movie or not. (This should change the Movie's Bool property that represents if it has been seen or not)
  A bar button item that segues to a new view controller. This new view controller allows the user to add new movies. The view controller should have a text field to put in the movie's name, and a button to save the movie.
  
