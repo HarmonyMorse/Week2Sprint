@@ -10,7 +10,7 @@ import Foundation
 
 /*
  TO DO NOW:
-
+ 
  
  FINISHED:
  A Movie model object that has properties for:
@@ -27,6 +27,9 @@ import Foundation
  The view controller should have a text field to put in the movie's name, and a button to save the movie.
  + Cancel button
  
+ Create class files for ViewController and DetailViewController
+
+ 
  */
 
 
@@ -36,7 +39,6 @@ import Foundation
  
  
  To do:
- Creat class files for ViewController and DetailViewController
  Assign each view to the classes created
  Make segues for buttons/text-fields/labels on each view
  Make methods for each button/text-field/label that requires and action
