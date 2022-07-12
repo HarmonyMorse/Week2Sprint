@@ -31,6 +31,10 @@ import Foundation
  
  Assign each view to the classes created
 
+ Make segues for buttons/text-fields/labels on AddMovieViewController
+ Make methods for each button/text-field/label that requires and action on AddMovieViewController
+ Make delegate
+ 
  
  */
 
@@ -41,8 +45,8 @@ import Foundation
  
  
  To do:
- Make segues for buttons/text-fields/labels on each view
- Make methods for each button/text-field/label that requires and action
+ Make segues for buttons/text-fields/labels on MoviesListViewController
+ Make methods for each button/text-field/label that requires and action on MoviesListViewController
  
  
  Stretch Problems:

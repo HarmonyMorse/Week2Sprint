@@ -98,9 +98,17 @@
                                 <rect key="frame" x="0.0" y="749" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem systemItem="cancel" id="mC3-9j-0VR"/>
+                                    <barButtonItem systemItem="cancel" id="mC3-9j-0VR">
+                                        <connections>
+                                            <action selector="cancelTapped:" destination="lsZ-FY-8a8" id="hsy-nf-3pd"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="pgE-vj-nNp"/>
-                                    <barButtonItem systemItem="save" id="guc-V0-m6t"/>
+                                    <barButtonItem systemItem="save" id="guc-V0-m6t">
+                                        <connections>
+                                            <action selector="saveTapped:" destination="lsZ-FY-8a8" id="3Vs-SS-znQ"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -118,6 +126,9 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="movieNameTextField" destination="BQc-pB-w7u" id="zyg-iF-k9Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dpV-X7-jxj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
