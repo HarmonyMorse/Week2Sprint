@@ -12,6 +12,7 @@ import Foundation
  TO DO NOW:
  
  
+ 
  FINISHED:
  A Movie model object that has properties for:
  The movie's name as a String
@@ -35,6 +36,13 @@ import Foundation
  Make methods for each button/text-field/label that requires and action on AddMovieViewController
  Make delegate
  
+ Make segue (IBOutlet) for text-field on MoviesListViewController
+ Make methods for each button/text-field/label that requires and action on MoviesListViewController
+ Array for movies in ListView
+ in viewDidLoad: make MoviesListTableView.delegate and .datasource = self
+ Extended MoviesListViewController to conform to UITableViewDataSource protocol. Methods: tableView(NumberOfRowsInSection), and tableView(cellForRowAt)
+ extended MoviesListViewController to conform to addMovieDelegate protocol (as was created in AddMovieViewController). Method: movieWasAdded
+ 
  
  */
 
@@ -45,8 +53,6 @@ import Foundation
  
  
  To do:
- Make segues for buttons/text-fields/labels on MoviesListViewController
- Make methods for each button/text-field/label that requires and action on MoviesListViewController
  
  
  Stretch Problems:
