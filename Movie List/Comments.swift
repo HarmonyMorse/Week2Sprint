@@ -37,7 +37,6 @@ import Foundation
  Make delegate
  
  Make segue (IBOutlet) for text-field on MoviesListViewController
- Make methods for each button/text-field/label that requires and action on MoviesListViewController
  Array for movies in ListView
  in viewDidLoad: make MoviesListTableView.delegate and .datasource = self
  Extended MoviesListViewController to conform to UITableViewDataSource protocol. Methods: tableView(NumberOfRowsInSection), and tableView(cellForRowAt)
