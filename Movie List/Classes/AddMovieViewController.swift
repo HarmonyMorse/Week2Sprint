@@ -30,7 +30,7 @@ class AddMovieViewController: UIViewController {
     
     @IBAction func saveTapped(_ sender: UIBarButtonItem) {
         guard let movieName = movieNameTextField.text else { return }
-        let newMovie = Movie(movieName: movieName)
+        let newMovie = Movie(movieName: movieName, seen: false)
         
         delegate?.movieWasAdded(newMovie)
     }

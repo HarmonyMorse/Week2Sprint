@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Movie {
+struct Movie: Equatable {
     var movieName: String
-    var seen: Bool = false
+    var seen: Bool
 }

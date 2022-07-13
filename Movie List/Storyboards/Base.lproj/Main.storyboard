@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieCell" id="Jbk-nU-sU5">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieCell" id="Jbk-nU-sU5" customClass="MovieTableViewCell" customModule="Movie_List" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jbk-nU-sU5" id="Lez-an-AW2">
@@ -34,6 +34,9 @@
                                                     <buttonConfiguration key="configuration" style="plain" title="Not Seen">
                                                         <fontDescription key="titleFontDescription" type="system" pointSize="24"/>
                                                     </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="seenTapped:" destination="Jbk-nU-sU5" eventType="touchUpInside" id="H5v-sG-hfH"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bkd-eA-FNH">
                                                     <rect key="frame" x="20" y="11.5" width="42" height="21"/>
@@ -50,6 +53,10 @@
                                                 <constraint firstItem="Bkd-eA-FNH" firstAttribute="centerY" secondItem="Lez-an-AW2" secondAttribute="centerY" id="cj2-tJ-Eck"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="movieNameLabel" destination="Bkd-eA-FNH" id="TmB-c4-HTz"/>
+                                            <outlet property="seenButtonText" destination="ugs-Xe-1Mm" id="lng-O9-dhD"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -66,12 +73,12 @@
                     <navigationItem key="navigationItem" id="glh-aS-SP8">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Hqz-1X-WLK">
                             <connections>
-                                <segue destination="lsZ-FY-8a8" kind="presentation" id="YqY-Co-gse"/>
+                                <segue destination="lsZ-FY-8a8" kind="presentation" identifier="ModalNewMovie" id="YqY-Co-gse"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="MoviesListTableView" destination="rcH-VF-NCV" id="ssy-60-soF"/>
+                        <outlet property="moviesListTableView" destination="rcH-VF-NCV" id="ssy-60-soF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pom-sq-dYl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
